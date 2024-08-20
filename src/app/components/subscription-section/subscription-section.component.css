@@ -1,0 +1,10 @@
+.subscription{
+    border: 1px solid rgb(169, 229, 255);
+    border-left: none;
+    border-right: none;
+}
+.form{
+    margin: auto;
+    border: 1px solid rgb(169, 229, 255);
+    /* padding: 2px; */
+}

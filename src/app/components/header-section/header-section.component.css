@@ -1,0 +1,23 @@
+.header{
+    box-shadow: 0 0 10px black;
+}
+.links{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding: 20px 50px;
+    background-color: rgb(43, 43, 43);
+}
+.links .li{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.links .li a{
+    display: block;
+    width: 100%;
+}
+.links .btn button{
+    width: 100%;
+}

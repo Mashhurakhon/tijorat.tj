@@ -1,0 +1,16 @@
+<div class="faqs">
+    <h1 class="text-blue-900 text-4xl font-bold mb-10 text-center"> ОТВЕТЫ на часто задаваемые вопросы </h1>
+    <div class="faq lg:text-xl text-lg py-5 lg:px-0 px-5" 
+    *ngFor="let faq of faqs; index as i">
+        <div 
+            class="ques flex justify-between lg:mb-5 mb-1 cursor-pointer" 
+            [ngClass]="{'text-blue-600': faq.active}" 
+            (click)="showAns(i)"> 
+            {{ faq.ques }} 
+            <i 
+            class="fa-solid fa-angle-down text-2xl text-gray-500" 
+            [ngClass]="{'fa-angle-up': faq.active, 'fa-angle-down': !faq.active}" ></i>
+        </div>
+        <div class="ans hidden" [ngClass]="{'block': faq.active, 'hidden': !faq.active}"> {{ faq.ans }} </div>
+    </div>
+</div>

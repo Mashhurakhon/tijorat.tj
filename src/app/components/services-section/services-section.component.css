@@ -1,0 +1,9 @@
+.card:hover p{
+    color: white;
+}
+.card:hover a{
+    color: white;
+}
+.card:hover .icon{
+    background-color: white;
+}

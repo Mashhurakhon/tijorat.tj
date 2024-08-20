@@ -1,0 +1,17 @@
+<div class="fiture py-10">
+    <h1 class="text-blue-900 text-4xl font-semibold mb-7 text-center">Все возможности управления торговлей</h1>
+    <div class="flex flex-col lg:flex-row gap-7 items-center">
+        <div class="image" class="a flex-auto w-1/3">
+            <img src="images/features-3.png" alt="">
+        </div>
+        <div class="oppertunities flex-auto lg:w-2/3 w-full grid grid-cols-2 grid-rows-3">
+            <div class="fiture" *ngFor="let fiture of fitures">
+                <div>
+                    <span class="icon text-4xl text-blue-800 mr-5"><i class="{{fiture.icon}}"></i></span>
+                    <span class="title text-xl text-blue-950 font-semibold">{{ fiture.title }}</span>
+                </div>
+                <div class="text mt-5 ml-14 text-gray-500">{{ fiture.text }}</div>
+            </div>
+        </div>
+    </div>
+</div>
