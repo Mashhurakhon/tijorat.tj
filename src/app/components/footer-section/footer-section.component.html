@@ -1,0 +1,50 @@
+<div class="footer flex items-center flex-col text-blue-900">
+    <div class="max-w-7xl flex flex-col lg:flex-row px-20 pt-16 pb-20 gap-10">
+        <div class="logo lg:w-1/2">
+            <app-logo></app-logo>
+            <p class="my-5 text-base">
+                «tijorat.pro» — облачный сервис. 
+                Работает с любого устройства. Быстрый старт без обучения — подключили онлайн-кассу, 
+                сканер штрихкодов и рабочее место продавца готово. Включает кассовую программу 
+                и товароучетную систему.
+            </p>
+            <div class="socs flex gap-4">
+                <i class="fa-brands fa-twitter cursor-pointer text-gray-400 text-2xl duration-200 hover:text-blue-950"></i>
+                <i class="fa-brands fa-facebook cursor-pointer text-gray-400 text-2xl duration-200 hover:text-blue-950"></i>
+                <i class="fa-brands fa-instagram cursor-pointer text-gray-400 text-2xl duration-200 hover:text-blue-950"></i>
+                <i class="fa-brands fa-linkedin cursor-pointer text-gray-400 text-2xl duration-200 hover:text-blue-950"></i>
+            </div>
+        </div>
+        <div class=" flex gap-10">
+            <div class="links">
+                <p class="title text-2xl mb-4 font-semibold leading-none">Полезные ссылки</p>
+                <ul class="flex flex-col gap-4">
+                    <li *ngFor="let link of links">
+                        <i class="fa-solid fa-angle-right text-xs mr-1 text-blue-300 font-thin"></i>  
+                        <a [href]="link.link">{{ link.label }}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="services flex-1">
+                <p class="title text-2xl mb-4 font-semibold leading-none ml-3">Наши услуги</p>
+                <ul class="flex flex-col gap-4">
+                    <li *ngFor="let service of services" class="flex items-center">
+                        <i class="fa-solid fa-angle-right text-xs mr-1 text-blue-300 font-thin"></i>  
+                        <p class="leading-none">{{ service }}</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts ">
+                <p class="title text-2xl mb-4 font-medium">Связать с нами</p>
+                <ul class="flex flex-col gap-4 font-bold text-black">
+                    <li>Адрес: <span class="font-normal">г. Худжанд</span></li>
+                    <li>Телефон: <span class="font-normal">+992 (92)-177-22-44</span></li>
+                    <li>Электронная почта:: <span class="font-normal"> {{email}} </span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom text-center py-8 bg-blue-50 w-[100%]">
+    <p>© Copyright <span class="font-semibold">tijorat.pro.</span> Все права защищены</p>
+</div>

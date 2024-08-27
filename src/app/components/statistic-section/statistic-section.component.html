@@ -1,0 +1,11 @@
+<div class="statistics pt-0 my-32">
+    <div class="lg:flex justify-between gap-10 grid grid-cols-2">
+        <div class="clients shadow-xl flex items-center gap-6 w-[100%] px-7 py-8" *ngFor="let stat of statistics">
+            <div class="icon text-5xl font-thin {{stat.color}}"><i [class]="stat.icon"></i></div>
+            <div class="flex flex-col justify-arround gap-3">
+                <span class="col text-4xl text-blue-900 font-semibold"> {{ stat.col }} </span>
+                <span class="text-blue-950 text-sm"> {{ stat.desc }} </span>
+            </div>
+        </div>
+    </div>
+</div>

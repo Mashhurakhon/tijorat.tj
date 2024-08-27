@@ -1,0 +1,15 @@
+<div class="services mt-20 py-14" id="services">
+    <h1 class="text-blue-950 text-4xl font-bold mb-7 text-center">Услуги</h1>
+    <div class="cards grid lg:grid-cols-3 lg:grid-rows-2 grid-cols-2 grid-rows-3 gap-6">
+        <div class="card rounded-lg border-b-2 border-solid {{card.borderColor}} pt-7 cursor-pointer hover:text-white {{card.bgColor}} duration-300" *ngFor="let card of service_cards">
+            <div class="flex flex-col gap-6 items-center shadow-lg p-7 h-[100%]">
+                <div class="icon flex items-center justify-center text-3xl w-fit h-fit p-6 {{card.iconcolor}}">
+                    <i class="fa-regular fa-message {{card.textcolor}}"></i>
+                </div>
+                <p class="title text-center font-semibold text-2xl text-gray-800">{{ card.title }}</p>
+                <p class="article text-center text-gray-900">{{ card.article }}</p>
+                <a href="#" class="{{card.textcolor}} font-semibold">Читать далее <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>  
+        </div>
+    </div>
+</div>

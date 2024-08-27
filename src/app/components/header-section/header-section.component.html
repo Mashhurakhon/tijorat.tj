@@ -1,0 +1,18 @@
+<div class="header flex items-center h-24 pl-20 pr-12 md:flex fixed top-0 right-0 left-0 bg-white z-10"  id="up">
+    <div class="flex-auto w-32 logo max-w-7xl">
+        <app-logo></app-logo>
+      </div>
+      <div class="flex-auto w-64 items-center lg:flex" [ngClass]="{hidden: active, links: !active}">
+        <div class="li flex-auto" *ngFor="let link of links">
+            <a [href]="link.link" class="text-sky-700 font-semibold hover:text-blue-500">{{ link.label }}</a>
+        </div>
+        <div class="btn flex-auto">
+            <button class="bg-blue-700 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded">
+                Регистрация 
+            </button>
+        </div>
+      </div>
+      <div class="icon block lg:hidden">
+        <i class="fa-solid fa-bars text-4xl text-blue-950 cursor-pointer" (click)="openLinks()"></i>
+      </div>
+</div>
